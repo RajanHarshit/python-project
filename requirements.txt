@@ -10,10 +10,14 @@ annotated-types==0.7.0
     # via pydantic
 anyio==4.12.0
     # via starlette
-bcrypt==5.0.0
-    # via passlib
+bcrypt==3.2.2
+    # via
+    #   -r requirements.in
+    #   passlib
 certifi==2025.11.12
     # via requests
+cffi==2.0.0
+    # via bcrypt
 charset-normalizer==3.4.4
     # via requests
 click==8.1.8
@@ -41,6 +45,8 @@ pyasn1==0.6.1
     # via
     #   python-jose
     #   rsa
+pycparser==2.23
+    # via cffi
 pydantic==2.12.5
     # via fastapi
 pydantic-core==2.41.5
